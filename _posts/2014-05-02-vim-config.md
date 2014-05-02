@@ -2,6 +2,7 @@
 layout: post
 title: Config Vim with vundle
 category: blog
+tags : Tools
 description:
 ---
 
