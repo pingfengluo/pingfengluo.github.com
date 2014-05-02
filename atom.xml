@@ -17,7 +17,7 @@ canonical: http://pingfengluo.github.com
     {% if post.layout == 'post' %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="{{ page.canonical }}{{ post.uri }}" />
+        <link href="{{ page.canonical }}{{ post.url }}" />
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>{{ page.canonical }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
