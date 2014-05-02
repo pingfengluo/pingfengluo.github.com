@@ -13,11 +13,13 @@ description: Hacker
     <p>A software developer who has a love affair with code.</p>
     <p>I live to learn.</p>
 </div>
+
 <div id="latest" class="content sixteen columns">
+     <br />
     {% for page in site.categories.blog limit:1 %}
-        <h2><a href="{{ page.url }}">Latest blog post</a></h2>
+        <!--h2><a href="{{ page.url }}">Latest blog post</a></h2>
         <br />
         <a href="{{ page.url }}" class="links" alt="{{ page.title }}" title="{{ page.title }}">{{ page.title }}</a>&nbsp;&nbsp;•&nbsp;&nbsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-        <p>{{ page.excerpt }}</p>
+        <p>{{ page.excerpt }}</p-->
     {% endfor %}
 </div>
