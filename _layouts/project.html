@@ -17,13 +17,13 @@
                     <div class="post-body-inner eleven columns">
                         {{ content }}
                         <div class="page-navigation">
-                            {% for post in site.categories.blog %}
+                            {% for post in site.categories.projects %}
                                 {% if post.url == page.url %}
                                     {% assign post_index0 = forloop.index0 %}
                                     {% assign post_index1 = forloop.index %}
                                 {% endif %}
                             {% endfor %}
-                            {% for post in site.categories.blog %}
+                            {% for post in site.categories.projects %}
                                 {% if post_index0 == forloop.index %}
                                     {% assign next_post = post.url %}
                                     {% assign next_post_title = post.title %}
